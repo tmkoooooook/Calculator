@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <div class="calculator-space">
+      <input class="value" id="value" value="0">
+    </div>
+    <div class="calculator-buttons">
+      <div class="calculator-buttons-space">
+        <button class="button" value="7" type="button" onclick="result(this)">7</button>
+        <button class="button" value="8" type="button" onclick="result(this)">8</button>
+        <button class="button" value="9" type="button" onclick="result(this)">9</button>
+        <button class="button" value="+" type="button" onclick="func(this)">+</button>
+      </div>
+      <div class="calculator-buttons-space">
+        <button class="button" value="4" type="button" onclick="result(this)">4</button>
+        <button class="button" value="5" type="button" onclick="result(this)">5</button>
+        <button class="button" value="6" type="button" onclick="result(this)">6</button>
+        <button class="button" value="-" type="button" onclick="func(this)">-</button>
+      </div>
+      <div class="calculator-buttons-space">
+        <button class="button" value="1" type="button" onclick="result(this)">1</button>
+        <button class="button" value="2" type="button" onclick="result(this)">2</button>
+        <button class="button" value="3" type="button" onclick="result(this)">3</button>
+        <button class="button" value="*" type="button" onclick="func(this)">*</button>
+      </div>
+      <div class="calculator-buttons-space">
+        <button class="button" value="0" type="button" onclick="result0(this)">0</button>
+        <button class="button" value="00" type="button" onclick="result0(this)">00</button>
+        <button class="button" value="." type="button" onclick="point(this)">.</button>
+        <button class="button" value="/" type="button" onclick="func(this)">/</button>
+      </div>
+      <div class="calculator-buttons-space">
+        <button class="button-long" value="AC" type="button" onclick="allclear()">AC</button>
+        <button class="button-long" value="=" type="button" onclick="calc()">=</button>
+      </div>
+    </div>
+    <!--<div class="calculator-buttons2">
+      <button class="button" id="btn-ac" type="button">AC</button>
+      <button class="button" id="btn-equal" type="button">=</button>
+    </div>-->
+  </div>
+  
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
